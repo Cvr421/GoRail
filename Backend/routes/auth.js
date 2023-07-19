@@ -37,7 +37,7 @@ router.use(bodyParser.urlencoded({ extended: false }))
 var jwtAuth = (req, res, next) => {
   if (req.headers.authorization) {
     const token = req.headers.authorization.split(' ')[1];
-    jwt.verify(token, process.env.SECRETKEY, (err, decoded) => {
+    jwt.verify(token, process.env.local.SECRETKEY, (err, decoded) => {
       if (err) {
         res.status(401).json({ message: 'Invalid Token' });
       } else {

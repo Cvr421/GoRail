@@ -207,7 +207,7 @@ app.get('/tr',async(req,res)=>({}))
 
 app.use('/',authRoutes)
 // Start the server
-const port = process.env.PORT || 3001;
+const port = process.env.local.PORT || 3001;
 app.listen(port, async() => {
  await connectdb();
   console.log(`Server started on port ${port}`);

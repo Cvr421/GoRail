@@ -35,7 +35,7 @@ userSchema.methods.getAuthToken= async function(user){
     username:this.username,
     password:this.password
   }
-  var tokenValue = jwt.sign(params, process.env.SECRETKEY, {expiresIn:'300000s'});
+  var tokenValue = jwt.sign(params, process.env.local.SECRETKEY, {expiresIn:'300000s'});
  this.tokens=this.tokens.concat({token:tokenValue})
    await this.save();
    return tokenValue;
