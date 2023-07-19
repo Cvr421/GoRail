@@ -1,0 +1,29 @@
+body{
+    background: #8E2DE2;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4b00e0cc, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4b00e0b6, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+.formlabels{
+    text-align: left;
+    font-weight: bold;
+}
+.container .btn{
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+    margin-left: 2px;
+}
+.container h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: medium;
+    text-align: left;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+.container p{
+    color: aliceblue;
+}
+.container{
+    margin-top: 20px;
+}
+
