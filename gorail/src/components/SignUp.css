@@ -1,3 +1,23 @@
+
+body{
+  background-image: url('../components/image/p1.png.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  margin: 0;
+ 
+  
+  
+}
+
+
+  
+  .signup {
+    background-color: #fff;
+  }
+  
+ 
+
 .signup-container {
     background-color: #fff;
     padding: 20px;
@@ -46,5 +66,10 @@
     margin-top: 10px;
     color: #007bff;
     text-decoration: none;
+   font-size: 10px;
+   span{
+     font-size: 15px;
+     color:black
+   }
   }
   

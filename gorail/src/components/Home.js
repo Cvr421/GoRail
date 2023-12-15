@@ -4,8 +4,8 @@ import { Link, useNavigate ,} from 'react-router-dom';
 import '../style.css';
 import Navbar from './Navbar';
 // import axios from 'axios';
-
-import axios from 'axios';
+import'./Home.css';
+//mport axios from 'axios';
 function Home() {
   // const navigate = useNavigate();
   // const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -51,28 +51,30 @@ function Home() {
     
     <Navbar/>
     <div className="container">
-      <h1>Welcome to the Railway Ticket Booking Website</h1>
+      <h1 className='nav'>Welcome to the Railway Ticket Booking Website</h1>
       <nav>
-        <ul className="nav-links">
+       
+        <ul >
           <li>
-            <Link to="/booking">Ticket Booking</Link>
+            <Link  className='button' to="/booking">Ticket Booking</Link>
           </li>
           <li>
-            <Link to="/pnr-status">PNR Status</Link>
+            <Link className='button'  to="/pnr-status">PNR Status</Link>
           </li>
           <li>
-            <Link to="/train-status">Train Running Status</Link>
+            <Link  className='button'  to="/train-status">Train Running Status</Link>
           </li>
           <li>
-            <Link to="/train-details">Train Details</Link>
+            <Link className='button'  to="/train-details">Train Details</Link>
           </li>
           <li>
-            <Link to="/cancel-ticket">Cancel Ticket</Link>
+            <Link className='button'  to="/cancel-ticket">Cancel Ticket</Link>
           </li>
           <li>
-            <Link to="/get-fare">Get Fare</Link>
+            <Link className='button'  to="/get-fare">Get Fare</Link>
           </li>
         </ul>
+       
       </nav>
     </div>
     </>)

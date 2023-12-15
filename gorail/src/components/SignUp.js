@@ -4,10 +4,17 @@ import 'bootstrap/dist/css/bootstrap.css';
 import { useNavigate } from 'react-router-dom';
 import "./SignUp.css"
 import Navbar from './Navbar';
+
 function Signup() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const navigate = useNavigate();
+
+
+  const handleLoginClick = () => {
+    // Use the history object to navigate to the specified route
+    navigate('/login');
+  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -16,7 +23,7 @@ function Signup() {
         username,
         password,
       });
-      navigate('/login')
+      navigate('/login');
       console.log(response.data);
     } catch (error) {
       console.error(error);
@@ -38,13 +45,13 @@ function Signup() {
       <input type="password" id="password" value={password} onChange={(e) => setPassword(e.target.value)} />
     </div>
     <button type="submit">Sign Up</button>
-    <button href="/login">Login</button>
-    {/* <>Already SignUp</><a href="/login">Login</a> */}
-  </form>
-</div>
+        {/* <button navigate={handleLoginClick}>Login</button> */}
+        <a href="/login">Already SignUp <span> Login</span></a>
+      </form>
+    </div>
 
-</>
-  );
-}
+    </>
+      );
+    }
 
 export default Signup;

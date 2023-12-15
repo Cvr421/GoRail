@@ -7,7 +7,7 @@ function Navbar() {
     <nav className="navbar navbar-expand-lg navbar-transparent navbar-fixed">
       <div className="container">
         <div className="d-flex justify-content-start align-items-center">
-          <a className="navbar-brand" href="/home">GoRail</a>
+          <a className="navbar-brand nav-link" href="/home">GoRail</a>
         </div>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>

@@ -9,7 +9,7 @@
   
   .navbar {
     /* Adjust the value to reduce the top space */
-margin-top: 1px;
+    margin-top: 1px;
     margin-bottom: 15px;
 
   }
@@ -19,5 +19,7 @@ margin-top: 1px;
     padding-top: 1px;
   }
   .nav-link{
-    color: 	#000102;
+    color: 	white;
+    font-weight: 900;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   }

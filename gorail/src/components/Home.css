@@ -1,0 +1,21 @@
+body{
+   background-image: url('../components/image/p2.png.jpg');
+   background-size: cover;
+   background-position: center;
+   height: 100vh;
+   margin: 0;
+       
+} 
+
+.nav{
+    color:yellow
+}
+
+.button{
+    border: 10px solid black;
+    backface-visibility: hidden;
+    font-size: small;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    color:aliceblue;
+}
